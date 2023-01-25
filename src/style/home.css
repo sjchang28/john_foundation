@@ -1,0 +1,38 @@
+/* Container holding the image and the text */
+.container {
+	position: absolute;
+	text-align: center;
+	color: white;
+	margin: 0 auto;
+}
+.container-photo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	position: relative;
+	text-align: left;
+	color: white;
+
+	margin-bottom: .25rem;
+	float: top;
+	height: 70vh;
+	max-height: 70vh;
+	max-width: 80%;
+	background-color: red;
+}
+.container-photo img {
+	flex-shrink: 0;
+	min-width: 100%;
+	min-height: 100%
+}
+ 
+/* Bottom left text */
+.bottom-left {
+	padding-left: 10px;
+	width: 90%;
+	position: absolute;
+	bottom: -50px;
+	left: 16px;
+	background-color: blue;
+}

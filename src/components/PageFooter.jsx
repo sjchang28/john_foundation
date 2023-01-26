@@ -1,6 +1,8 @@
 import { Fragment } from "react";
 
-const Footer = () => {
+import "../style/App.css";
+
+const PageFooter = () => {
 	return (
 		<Fragment>
 			<div className="footer">
@@ -9,7 +11,7 @@ const Footer = () => {
 					<div className="copyright-footer">Copyright © 2006 John D. Chang Foundation-All rights reserved.</div>
 				</a>
 				<div className="footer-right">
-					<a className="active" href="/">Home</a>
+					<a href="/">Home</a>
 					<a href="/howcanihelp">How Can I Help</a>
 					<a href="/contactus">Contact</a>
 					<a href="/privacy">Privacy</a>
@@ -19,4 +21,4 @@ const Footer = () => {
   	);
 };
 
-export default Footer;
+export default PageFooter;

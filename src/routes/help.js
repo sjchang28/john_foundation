@@ -1,23 +1,23 @@
 import { Fragment } from "react";
 
-import Header from '../components/Header.jsx';
-import Footer from '../components/Footer.jsx';
+import PageHeader from '../components/PageHeader.jsx';
+import PageFooter from '../components/PageFooter.jsx';
 
-import '../style/help.css';
+import '../style/App.css';
 
 const Help = () => {
 	return(
 		<Fragment>
-			<Header />
-				<div className="help-information">
-				<h1>How Can I Help</h1> <br />
+			<PageHeader activePage="help" />
+			<div className="page-information">
+			<h1>How Can I Help</h1> <br />
 				<div>
 					<h2>How to Give to the John D. Chang Foundation</h2>
 					<p>
 						The John D. Chang Foundation, Inc. was established on John's 39th birthday, January 4th, 2003. The purpose is to provide scholarships and support youth sports teams and community events. The foundation offers an easy way to help make a significant difference with your giving. <br /><br />
 						
 						<b>You Can Mail in Tax Deductible Contributions</b> <br />
-						<div className="mailing-address">
+						<div>
 							John D. Chang Foundation <br />
 							9419 SW 56 Place <br />
 							Gainesville, FL 32608 <br />
@@ -46,9 +46,8 @@ const Help = () => {
 						<a href="/contactus">Contact Us</a> to learn more about the John D. Chang Foundation's donor opportunities. 
 					</p>
 				</div>
-
-				</div>
-			<Footer />
+			</div>
+			<PageFooter />
 		</Fragment>
 	);
 };

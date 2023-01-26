@@ -6,13 +6,15 @@ import Button from 'react-bootstrap/Button';
 import { Container, Col, Row} from "react-bootstrap";
 import { useState } from 'react';
 
-import "../style/home.css";
+import "../style/App.css";
 
 const Article = ({
 	image,
+	alt,
 	header,
 	date,
-	text
+	text,
+	longText
 }) => {
 	const [readMore, setReadMore] = useState("Read More");
 	const [readMoreText, setReadMoreText] = useState(false);
@@ -27,7 +29,7 @@ const Article = ({
 				<Container fluid style={{disply:'flex', justifyContent:'left'}} className="no-gutter">
 					<Row>
 						<Col lg="auto" md ="auto" sm="auto">
-							<Image src={image} rounded style={{width: '15rem', height: '10rem'}} className="thumbnail-image"/>
+							<Image src={image} alt={alt} rounded style={{width: '15rem', height: '10rem'}} className="thumbnail-image"/>
 						</Col>
 						<Col ld="9" md="8" sm="12">
 							<Card.Title>
@@ -40,7 +42,9 @@ const Article = ({
 								<div className="text-container" style={readMoreText ? ({height:"auto"}) : ({height:"3.7em"})}>
 									{text}
 								</div>
-								<Button onClick={onClickReadMore} variant="link" className="read-more-button">{readMore}</Button>
+								{
+									longText ? (<Button onClick={onClickReadMore} variant="link" className="read-more-button">{readMore}</Button>) : (<div />)
+								}
 							</Card.Text>
 						</Col>
 					</Row>

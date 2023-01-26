@@ -1,21 +1,21 @@
 import React, { Fragment } from 'react';
 import { Container, Col} from "react-bootstrap";
 
-import '../style/home.css';
+import '../style/App.css';
 
-import Header from '../components/Header.jsx';
+import PageHeader from '../components/PageHeader.jsx';
 import Article from '../components/Article.jsx';
-import Footer from '../components/Footer.jsx';
+import PageFooter from '../components/PageFooter.jsx';
 
 import JohnPhoto from '../components/images/johnphoto.jpg';
 
 const Home = () => {  
   return (
 	<Fragment>
-	<Header />
+	<PageHeader activePage="home" />
 	<div>
 		<div className="container container-photo">
-			<img src={JohnPhoto} alt="Photo of John D. Chang"/>
+			<img src={JohnPhoto} alt="John D. Chang"/>
 			<div className="bottom-left">
 				<h1>John D. Chang Foundation</h1>
 				<div>
@@ -29,6 +29,7 @@ const Home = () => {
 			<Col>
 				<Article 
 					image = "https://tinyurl.com/dexrertr"
+					alt="John D. Chang Foundation Awards $5,500 in Scholarships to Florida Students"
 					header="John D. Chang Foundation Awards $5,500 in Scholarships to Florida Students"
 					date="June 1, 2006"
 					text={<div>
@@ -48,11 +49,13 @@ const Home = () => {
 		
 						For more information, visit <a href="www.johndchang.org">www.johndchang.org.</a> <br /><br />
 
-						<a href="https://web.archive.org/web/20081024045111/http://video.google.com/videoplay?docid=8734693363316400508">About the John D. Chang Foundation</a><br />
+						<a href="/about">About the John D. Chang Foundation</a><br />
 					</div>}
+					longText={true}
 				/>
 				<Article 
 					image = "https://tinyurl.com/dexrertr"
+					alt="Broadcasting Director Made Indelible Mark on Cowboys"
 					header="Broadcasting Director Made Indelible Mark on Cowboys"
 					date="February 10, 2005"
 					text={<div>
@@ -84,9 +87,11 @@ const Home = () => {
 						E-mail <a href="ewu@dallasnews.com">ewu@dallasnews.com</a> <br /><br />
 						Copyright, 2005, Dallas Morning News. All Rights Reserved.
 					</div>}
+					longText={true}
 				/>
 				<Article 
 					image = "https://tinyurl.com/dexrertr"
+					alt="John D. Chang Foundation Awards $5,500 in Scholarships"
 					header="John D. Chang Foundation Awards $5,500 in Scholarships"
 					date="October 6, 2004"
 					text={<div>
@@ -95,19 +100,23 @@ const Home = () => {
 						Chang was the director of broadcasting for the Dallas Cowboys when he died from a cerebral hemorrhage in 2002 at the age of 38. During his prestigious career in broadcast journalism as a videographer, editor, director, and manager, John covered the space shuttle Discovery launch, produced three Cowboys Super Bowl specials and developed the "Making of the Dallas Cowboys Cheerleader Calendar" program, which airs annually on ESPN. <br /><br />
 						"John believed if you could dream it, it was possible," said Judy Lai, John's mother and the executive director of the John Chang Foundation. "He was always eager to help people in pursuit of their dreams, and that's what the John Chang Foundation is all about." <br /><br />
 					</div>}
+					longText={true}
 				/>
 				<Article 
 					image = "https://tinyurl.com/dexrertr"
+					alt="First Annual 'John D. Chang Award of Excellence' Award"
 					header="First Annual 'John D. Chang Award of Excellence' Award"
 					date="September 23, 2004"
 					text={<div>
 						MIAMI-The John Chang Foundation announces that Judy Lai, the mother of John Chang, was invited to attend the Dallas Cowboys 2004 Employee Years of Service Awards luncheon, and presented the first annual John Chang Award of Excellence. The John Chang Award will be presented annually to a Dallas Cowboys Department Head who displays the character and qualities of the late John Chang who directed the Cowboys television production department from 1993 to 2002. The recipient will be honored for his or her daily dedication and loyalty to the organization with an emphasis on the qualities that we all loved and admired in John Chang: teamwork, dependability, production, creativity, accountability, unselfishness and respect and love for fellow employees. The award will be given to an individual who has--through years of service--consistently made a positive difference in the daily operation of the organization...and someone who passionately strives to make a dynamic contribution to the Dallas Cowboys. "Being at the luncheon that honored John's character and being with his friends and colleagues who loved him made me very proud," said Lai. <br /><br />
-						First "John Chang award of Excellence" was awarded to Bruce Hardy V.P and General Manager of Texas Stadium on September 23, 2004
+						First "John Chang award of Excellence" was awarded to Bruce Hardy V.P and General Manager of Texas Stadium on September 23, 2004.
 					</div>}
+					longText={true}
 				/>
 				<Article 
 					image = "https://tinyurl.com/dexrertr"
-					header="John Chang Broadcasting Wing"
+					alt="Dallas Cowboys Dedicate Production Wing in Memory of John Chang"
+					header="Dallas Cowboys Dedicate Production Wing in Memory of John Chang"
 					date="July 1, 2004"
 					text={<div>
 						<i>
@@ -119,11 +128,12 @@ const Home = () => {
 						<i>"He inspired our organization, me personally in a way that we built a studio that is unsurpassed in sports. So the Cowboys, have broken new ground because of John Chang's quarterbacking that no team in the history of sports have ever been there and he not only built a great organization around him, but the very studio that were in and the very state of the art of it is John's signature."</i> <br/><br/>
 						Jerry Jones, Owner and General Manager of the Dallas Cowboys Football Club.
 					</div>}
+					longText={true}
 				/>
 			</Col>
 		</Container>
 	</div>
-	<Footer />
+	<PageFooter />
 	</Fragment>
   );
 };

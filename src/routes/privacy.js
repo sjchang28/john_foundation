@@ -1,15 +1,15 @@
 import { Fragment } from "react";
 
-import Header from '../components/Header.jsx';
-import Footer from '../components/Footer.jsx';
+import PageHeader from '../components/PageHeader.jsx';
+import PageFooter from '../components/PageFooter.jsx';
 
-import '../style/privacy.css'
+import '../style/App.css'
 
 const Privacy = () => {
 	return(
 		<Fragment>
-			<Header />
-			<div className="privacy-information">
+			<PageHeader />
+			<div className="page-information">
 				<h1>Privacy Informatinon</h1>
 				<h2>LEGAL</h2>
 				Welcome to the John D. Chang Foundation Website (the "Site"). John D. Chang Foundation provides this Site as a service to its parents and students. Please review the following basic rules that govern your use of our Site (the "Agreement"). Please note that your use of our Site constitutes your agreement to follow and be bound by these terms. If you do not agree to these terms, please do not use this Site. Although you may "bookmark" a particular portion of this Site and thereby bypass this Agreement, your use of this Site still binds you to the terms. Since John D. Chang Foundation may revise this Agreement at any time, you should visit this page periodically to review the terms of your use. 
@@ -51,7 +51,7 @@ const Privacy = () => {
 				<h2>TERMINATION</h2>
 				These terms are effective unless and until terminated by either you or John D. Chang Foundation . You may terminate this Agreement at any time. John D. Chang Foundation . also may terminate this Agreement at any time and may do so immediately without notice, and accordingly deny you access to the Site, if in John D. Chang Foundation's sole discretion you fail to comply with any term or provision of this Agreement. Upon any termination of the Agreement by either you or John D. Chang Foundation you must promptly destroy all materials downloaded or otherwise obtained from this Site, as well as all copies of such materials, whether made under the terms of use or otherwise.
 			</div>
-			<Footer />
+			<PageFooter />
 		</Fragment>
 	);
 };

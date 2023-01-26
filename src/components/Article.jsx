@@ -22,14 +22,14 @@ const Article = ({
 	};
 
 	return (
-		<Card bg="light" style={{margin:"0 auto", width: '90%'}} onClick={console.log(header)} className="mb-1">
+		<Card bg="light" style={{margin:"0 auto", width: '90%'}} className="mb-1">
 			<Card.Body>
 				<Container fluid style={{disply:'flex', justifyContent:'left'}} className="no-gutter">
 					<Row>
-						<Col md="3" sm="12">
+						<Col lg="auto" md ="auto" sm="auto">
 							<Image src={image} rounded style={{width: '15rem', height: '10rem'}} className="thumbnail-image"/>
 						</Col>
-						<Col md="9" sm="12">
+						<Col ld="9" md="8" sm="12">
 							<Card.Title>
 								<div className="article-header">
 									<Card.Subtitle className='mt-2 text-muted'>{date}</Card.Subtitle>

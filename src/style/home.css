@@ -1,16 +1,71 @@
+/* -------------------- Header -------------------- */
+.header {
+	overflow: hidden;
+	background-color: #f1f1f1;
+	padding: 20px 10px;
+	margin-bottom: 0.5rem;
+}
+.header a {
+	float: left;
+	color: navy;
+	text-align: center;
+	padding: 12px;
+	text-decoration: none;
+	font-size: 18px; 
+	line-height: 25px;
+	border-radius: 4px;
+}
+
+.header a.logo {
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.header a:hover {
+	background-color: navy;
+	color: white;
+}
+
+.header a.active {
+	text-decoration: underline;
+	color: navy;
+}
+.header a.active:hover {
+	text-decoration: none;
+	background-color: navy;
+	color: white;
+}
+
+.header-right {
+	float: right;
+}
+
+@media screen and (max-width: 1000px) {
+	.header a {
+		float: none;
+		display: block;
+		text-align: left;
+	}
+	
+	.header-right {
+		float: none;
+	}
+}
+
+/* -------------------- Articles -------------------- */
 /* Container holding the image and the text */
 .container {
 	position: absolute;
 	text-align: center;
-	color: white;
 	margin: 0 auto;
-}
-.container-photo {
-	display: flex;
+
 	justify-content: center;
 	align-items: center;
 	overflow: hidden;
 	position: relative;
+}
+.container-photo {
+	display: flex;
 	text-align: left;
 	color: white;
 
@@ -19,7 +74,6 @@
 	height: 70vh;
 	max-height: 70vh;
 	max-width: 80%;
-	background-color: red;
 }
 .container-photo img {
 	flex-shrink: 0;
@@ -32,7 +86,81 @@
 	padding-left: 10px;
 	width: 90%;
 	position: absolute;
-	bottom: -50px;
+	bottom: 10px;
 	left: 16px;
 	background-color: blue;
+}
+
+.articles{
+	color: black;
+	text-align: left;
+}
+.news-highlights-articles{
+	color: black;
+	text-align: center;
+	font-size: calc(1rem + 1.5vw);
+	font-weight: 5rem;
+
+	margin-top: 3rem;
+	margin-bottom: 2rem;
+}
+
+.thumbnail-image{
+	float: left;
+}
+.article-header{
+	float: left;
+}
+.text-container{
+	overflow: hidden;
+	line-height: 1.2em;
+	width: 90%;
+}
+.read-more-button{
+	text-decoration: underline;
+	color:#5A5A5A;
+	font-size: smaller;
+	margin-left: -0.8rem;
+}
+
+/* -------------------- Footer -------------------- */
+.footer {
+	overflow: hidden;
+	background-color: navy;
+	padding: 20px 10px;
+	margin-top: 5rem;
+}
+.footer a {
+	float: left;
+	color: navy;
+	text-align: center;
+	padding: 12px;
+	text-decoration: none;
+	font-size: 18px; 
+	line-height: 25px;
+	border-radius: 4px;
+}
+
+.footer a.logo {
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.footer a:hover {
+	background-color: navy;
+	color: white;
+}
+
+.footer a.active {
+	text-decoration: underline;
+	color: navy;
+}
+.footer a.active:hover {
+	text-decoration: none;
+	background-color: navy;
+	color: white;
+}
+
+.footer-right {
+	float: right;
 }

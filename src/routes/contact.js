@@ -11,13 +11,30 @@ import '../style/App.css'
 const Contact = () => {
 	const sendInfo = () => {
 	};
+	
 	return(
 		<Fragment>
-			<PageHeader activePage="contact" />
+			<PageHeader />
 			<div className="page-information">
 			<h1>Contact Us</h1>
-				<div className="section-card-information">
-					<header><h2>Sign Our Guest Book</h2></header>
+			<hr className="mt-3"/>
+			<p className="mb-5">
+				Connect with us at <a href="https://www.facebook.com/photo/?fbid=172692446141429&set=pb.100064813205707.-2207520000.">facebook.</a> <br />
+			</p>
+			
+			<h2>Email Us Questions or Comments</h2>
+			<p>
+				Please fill out the form below to send us an email. We will get back to you as soon as possible.
+			</p>
+				<div className="section-card-information general-section-card">
+					<InputGroup className="mb-3">
+					<InputGroup.Text id="basic-addon1">Subject</InputGroup.Text>
+					<Form.Control
+						placeholder="Subject"
+						aria-label="Subject"
+						aria-describedby="basic-addon1"
+					/>
+					</InputGroup>
 					<InputGroup className="mb-3">
 					<InputGroup.Text id="basic-addon1">First Name</InputGroup.Text>
 					<Form.Control
@@ -35,30 +52,6 @@ const Contact = () => {
 					/>
 					</InputGroup>
 					<InputGroup className="mb-3">
-					<InputGroup.Text id="basic-addon1">How Do You Know John?</InputGroup.Text>
-					<Form.Control
-						placeholder="How Do You Know John?"
-						aria-label="How Do You Know John?"
-						aria-describedby="basic-addon1"
-					/>
-					</InputGroup>
-					<InputGroup className="mb-3">
-					<InputGroup.Text id="basic-addon1">Company</InputGroup.Text>
-					<Form.Control
-						placeholder="Company"
-						aria-label="Company"
-						aria-describedby="basic-addon1"
-					/>
-					</InputGroup>
-					<InputGroup className="mb-3">
-					<InputGroup.Text id="basic-addon1">Your Title</InputGroup.Text>
-					<Form.Control
-						placeholder="Your Title"
-						aria-label="Your Title"
-						aria-describedby="basic-addon1"
-					/>
-					</InputGroup>
-					<InputGroup className="mb-3">
 					<InputGroup.Text id="basic-addon1">Email</InputGroup.Text>
 					<Form.Control
 						placeholder="Email"
@@ -67,89 +60,20 @@ const Contact = () => {
 					/>
 					</InputGroup>
 					<InputGroup className="mb-3">
-					<InputGroup.Text id="basic-addon1">Phone</InputGroup.Text>
+					<InputGroup.Text id="basic-addon1">Phone (Optional)</InputGroup.Text>
 					<Form.Control
-						placeholder="Phone"
-						aria-label="Phone"
+						placeholder="Phone (Optional)"
+						aria-label="Phone (Optional)"
 						aria-describedby="basic-addon1"
 					/>
 					</InputGroup>
 
-					<h3>Address</h3>
-					<InputGroup className="mb-3">
-					<InputGroup.Text id="basic-addon1">Street Name</InputGroup.Text>
-					<Form.Control
-						placeholder="Street Name"
-						aria-label="Street Name"
-						aria-describedby="basic-addon1"
-					/>
-					</InputGroup>
-					<InputGroup className="mb-3">
-					<InputGroup.Text id="basic-addon1">City</InputGroup.Text>
-					<Form.Control
-						placeholder="City"
-						aria-label="City"
-						aria-describedby="basic-addon1"
-					/>
-					</InputGroup>
-					<InputGroup className="mb-3">
-					<InputGroup.Text id="basic-addon1">State</InputGroup.Text>
-					<Form.Control
-						placeholder="State"
-						aria-label="State"
-						aria-describedby="basic-addon1"
-					/>
-					</InputGroup>
-					<InputGroup className="mb-3">
-					<InputGroup.Text id="basic-addon1">Zip Code</InputGroup.Text>
-					<Form.Control
-						placeholder="Zip Code"
-						aria-label="Zip Code"
-						aria-describedby="basic-addon1"
-					/>
-					</InputGroup>
-					<InputGroup className="mb-3">
-					<InputGroup.Text id="basic-addon1">Country</InputGroup.Text>
-					<Form.Control
-						placeholder="Country"
-						aria-label="Country"
-						aria-describedby="basic-addon1"
-					/>
-					</InputGroup>
-					<Button variant="primary" onClick={sendInfo}>Submit Info</Button>
-				</div>
-
-				<div className="section-card-information">
-					<header><h2>Email Us Comments or Questions</h2></header>
-					<InputGroup className="mb-3">
-					<InputGroup.Text id="basic-addon1">Name</InputGroup.Text>
-					<Form.Control
-						placeholder="Name"
-						aria-label="Name"
-						aria-describedby="basic-addon1"
-					/>
-					</InputGroup>
-					<InputGroup className="mb-3">
-					<InputGroup.Text id="basic-addon1">Email</InputGroup.Text>
-					<Form.Control
-						placeholder="Email"
-						aria-label="Email"
-						aria-describedby="basic-addon1"
-					/>
-					</InputGroup>
-					<InputGroup className="mb-3">
-					<InputGroup.Text id="basic-addon1">Phone</InputGroup.Text>
-					<Form.Control
-						placeholder="Phone"
-						aria-label="Phone"
-						aria-describedby="basic-addon1"
-					/>
-					</InputGroup>
-
-					<h5>Comments or Questions</h5>
+					<h5>Questions or Comments</h5>
 					<InputGroup>
 					<Form.Control as="textarea" aria-label="With textarea" />
 					</InputGroup>
+
+					{/* CAPTCHA */}
 					<Button variant="primary" className="mt-2" onClick={sendInfo}>Submit Info</Button>
 				</div>
 			</div>

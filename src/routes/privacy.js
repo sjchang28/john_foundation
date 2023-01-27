@@ -10,7 +10,9 @@ const Privacy = () => {
 		<Fragment>
 			<PageHeader />
 			<div className="page-information">
-				<h1>Privacy Informatinon</h1>
+			<h1>Privacy Informatinon</h1>
+			<hr className="mt-3"/>
+
 				<h2>LEGAL</h2>
 				Welcome to the John D. Chang Foundation Website (the "Site"). John D. Chang Foundation provides this Site as a service to its parents and students. Please review the following basic rules that govern your use of our Site (the "Agreement"). Please note that your use of our Site constitutes your agreement to follow and be bound by these terms. If you do not agree to these terms, please do not use this Site. Although you may "bookmark" a particular portion of this Site and thereby bypass this Agreement, your use of this Site still binds you to the terms. Since John D. Chang Foundation may revise this Agreement at any time, you should visit this page periodically to review the terms of your use. 
 				<br /><br />

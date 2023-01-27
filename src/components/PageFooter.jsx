@@ -6,8 +6,8 @@ const PageFooter = () => {
 	return (
 		<Fragment>
 			<div className="footer">
-				<a href="/" className="logo">
-					John D. Chang Foundation <br />
+				<a href="/">
+					<span className="logo-text">John D. Chang Foundation<span className="registered-trademark-symbol">®</span> </span><br />
 					<div className="copyright-footer">Copyright © 2006 John D. Chang Foundation-All rights reserved.</div>
 				</a>
 				<div className="footer-right">

@@ -1,20 +1,21 @@
 import { Fragment } from "react";
 
+import FoundationLogo from "./images/foundation_logo.png";
 import "../style/App.css";
 
-const PageHeader = ({
-	activePage
-}) => {
+const PageHeader = () => {
 	return (
 		<Fragment>
 			<div className="header">
-				<a href="/" className="logo">John D. Chang Foundation</a>
+				<a href="/">
+					<img src={FoundationLogo} alt="John D. Chang Foundation Logo" className="foundation-logo"/>
+				</a>
 				<div className="header-right">
-					<a className={(activePage==="home") ? "active" : ""} href="/">Home</a>
-					<a className={(activePage==="scholarships") ? "active" : ""} href="/scholarships_grants">Scholarships & Grants</a>
-					<a className={(activePage==="help") ? "active" : ""} href="/howcanihelp">How Can I Help</a>
-					<a className={(activePage==="contact") ? "active" : ""} href="/contactus">Contact</a>
-					<a className={(activePage==="about") ? "active" : ""} href="/about">About</a>
+					<a href="/">Home</a>
+					<a href="/scholarships_grants">Scholarships & Grants</a>
+					<a href="/waystogive">Ways to Give</a>
+					<a href="/about">About</a>
+					<a href="/contactus">Contact</a>
 				</div>
 			</div>
 		</Fragment>

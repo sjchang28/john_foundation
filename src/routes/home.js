@@ -41,25 +41,23 @@ const Home = () => {
 					header="John D. Chang Foundation Awards $5,500 in Scholarships to Florida Students"
 					date="June 1, 2006"
 					text={<Fragment>
-						<p>
-							MIAMI-June 1, 2006-The John D. Chang Foundation is helping six Florida high-school and college students realize their dreams by awarding each a scholarship. <br /><br />
-							The Foundation, established in memory of John Chang, a graduate of North Miami Senior High and Florida State University, has awarded $3,000 in scholarships to the following Miami-Dade County high school students:
-							<ul>
-								<li> $1,000 - Kemy Joseph</li>
-								<li> $500 - Jennifer Espinet </li>
-								<li> $500 - Raquel Guerin</li>
-								<li> $500 - Christopher Ramos</li>
-								<li> $500 - Leanne Penna is the winner of the Florida Phi Delta Theta Chapter of Phi Delta Theta at University of Miami Scholarship.</li>
-							</ul>
-							In addition, the Foundation has awarded a $2,500 in Scholarship to Julia McManus, a media production major at Florida State University. <br /><br />
-							The Foundation will award two $1,500 scholarships to Dallas students this August. <br /><br />
-							Chang was the director of broadcasting for the Dallas Cowboys when he died from a cerebral hemorrhage in 2002 at the age of 38. During his prestigious career in broadcast journalism as a videographer, editor, director, and manager, John covered the space shuttle Discovery launch, produced three Cowboys Super Bowl specials and developed the "Making of the Dallas Cowboys Cheerleader Calendar" program, which airs annually on ESPN. <br /><br />
-							"John believed if you could dream it, it was possible," said Judy Lai, John's mother and the president of the John D. Chang Foundation. "He was always eager to help people in pursuit of their dreams, and that's what the John D. Chang Foundation is all about." <br/><br/>
-			
-							For more information, visit <a href="www.johndchang.org">www.johndchang.org.</a> <br /><br />
+						MIAMI-June 1, 2006-The John D. Chang Foundation is helping six Florida high-school and college students realize their dreams by awarding each a scholarship. <br /><br />
+						The Foundation, established in memory of John Chang, a graduate of North Miami Senior High and Florida State University, has awarded $3,000 in scholarships to the following Miami-Dade County high school students:
+						<ul>
+							<li> $1,000 - Kemy Joseph</li>
+							<li> $500 - Jennifer Espinet </li>
+							<li> $500 - Raquel Guerin</li>
+							<li> $500 - Christopher Ramos</li>
+							<li> $500 - Leanne Penna is the winner of the Florida Phi Delta Theta Chapter of Phi Delta Theta at University of Miami Scholarship.</li>
+						</ul>
+						In addition, the Foundation has awarded a $2,500 in Scholarship to Julia McManus, a media production major at Florida State University. <br /><br />
+						The Foundation will award two $1,500 scholarships to Dallas students this August. <br /><br />
+						Chang was the director of broadcasting for the Dallas Cowboys when he died from a cerebral hemorrhage in 2002 at the age of 38. During his prestigious career in broadcast journalism as a videographer, editor, director, and manager, John covered the space shuttle Discovery launch, produced three Cowboys Super Bowl specials and developed the "Making of the Dallas Cowboys Cheerleader Calendar" program, which airs annually on ESPN. <br /><br />
+						"John believed if you could dream it, it was possible," said Judy Lai, John's mother and the president of the John D. Chang Foundation. "He was always eager to help people in pursuit of their dreams, and that's what the John D. Chang Foundation is all about." <br/><br/>
+		
+						For more information, visit <a href="www.johndchang.org">www.johndchang.org.</a> <br /><br />
 
-							<a href="/about">About the John D. Chang Foundation</a><br />
-						</p>
+						<a href="/about">About the John D. Chang Foundation</a><br />
 					</Fragment>}
 					longText={true}
 				/>
@@ -69,7 +67,6 @@ const Home = () => {
 					header="Broadcasting Director Made Indelible Mark on Cowboys"
 					date="February 10, 2005"
 					text={<Fragment>
-						<p>
 							<i>Esther Wu</i> <br /><br />
 
 							<b>Dallas Morning News, The (TX)</b> <br />
@@ -97,7 +94,6 @@ const Home = () => {
 
 							E-mail <a href="ewu@dallasnews.com">ewu@dallasnews.com</a> <br /><br />
 							Copyright, 2005, Dallas Morning News. All Rights Reserved.
-						</p>
 					</Fragment>}
 					longText={true}
 				/>
@@ -107,12 +103,10 @@ const Home = () => {
 					header="John D. Chang Foundation Awards $5,500 in Scholarships"
 					date="October 6, 2004"
 					text={<Fragment>
-						<p>
 							MIAMI-The John Chang Foundation is helping five Miami-Dade County high school graduates and one Florida State University student realize their dreams by awarding each a scholarship. <br/><br/>
 							The Foundation, established in memory of John Chang, a graduate of North Miami Senior High and Florida State University, awarded $500 scholarships through the College Assistance Program (CAP, Inc.) to Ari Cuenin, Erica Cadet, Shaquellia Holmes, Wilbert Jerome, and Carlyle Turner. A $2,500 scholarship was awarded to Lindsey Mesa, an F.S.U. Media Production major. <br /><br />
 							Chang was the director of broadcasting for the Dallas Cowboys when he died from a cerebral hemorrhage in 2002 at the age of 38. During his prestigious career in broadcast journalism as a videographer, editor, director, and manager, John covered the space shuttle Discovery launch, produced three Cowboys Super Bowl specials and developed the "Making of the Dallas Cowboys Cheerleader Calendar" program, which airs annually on ESPN. <br /><br />
 							"John believed if you could dream it, it was possible," said Judy Lai, John's mother and the executive director of the John Chang Foundation. "He was always eager to help people in pursuit of their dreams, and that's what the John Chang Foundation is all about." <br /><br />
-						</p>
 					</Fragment>}
 					longText={true}
 				/>
@@ -122,10 +116,8 @@ const Home = () => {
 					header="First Annual 'John D. Chang Award of Excellence' Award"
 					date="September 23, 2004"
 					text={<Fragment>
-						<p>
-							MIAMI-The John Chang Foundation announces that Judy Lai, the mother of John Chang, was invited to attend the Dallas Cowboys 2004 Employee Years of Service Awards luncheon, and presented the first annual John Chang Award of Excellence. The John Chang Award will be presented annually to a Dallas Cowboys Department Head who displays the character and qualities of the late John Chang who directed the Cowboys television production department from 1993 to 2002. The recipient will be honored for his or her daily dedication and loyalty to the organization with an emphasis on the qualities that we all loved and admired in John Chang: teamwork, dependability, production, creativity, accountability, unselfishness and respect and love for fellow employees. The award will be given to an individual who has--through years of service--consistently made a positive difference in the daily operation of the organization...and someone who passionately strives to make a dynamic contribution to the Dallas Cowboys. "Being at the luncheon that honored John's character and being with his friends and colleagues who loved him made me very proud," said Lai. <br /><br />
-							First "John Chang award of Excellence" was awarded to Bruce Hardy V.P and General Manager of Texas Stadium on September 23, 2004.
-						</p>
+						MIAMI-The John Chang Foundation announces that Judy Lai, the mother of John Chang, was invited to attend the Dallas Cowboys 2004 Employee Years of Service Awards luncheon, and presented the first annual John Chang Award of Excellence. The John Chang Award will be presented annually to a Dallas Cowboys Department Head who displays the character and qualities of the late John Chang who directed the Cowboys television production department from 1993 to 2002. The recipient will be honored for his or her daily dedication and loyalty to the organization with an emphasis on the qualities that we all loved and admired in John Chang: teamwork, dependability, production, creativity, accountability, unselfishness and respect and love for fellow employees. The award will be given to an individual who has--through years of service--consistently made a positive difference in the daily operation of the organization...and someone who passionately strives to make a dynamic contribution to the Dallas Cowboys. "Being at the luncheon that honored John's character and being with his friends and colleagues who loved him made me very proud," said Lai. <br /><br />
+						First "John Chang award of Excellence" was awarded to Bruce Hardy V.P and General Manager of Texas Stadium on September 23, 2004.
 					</Fragment>}
 					longText={true}
 				/>
@@ -135,16 +127,14 @@ const Home = () => {
 					header="Dallas Cowboys Dedicate Production Wing in Memory of John Chang"
 					date="July 1, 2004"
 					text={<Fragment>
-						<p>
-							<i>
-								Dallas Cowboys Center <br />
-								Irving, Texas <br /><br />
-							</i>
+						<i>
+							Dallas Cowboys Center <br />
+							Irving, Texas <br /><br />
+						</i>
 
-							MIAMI-In June 2004, the Dallas Cowboys Football Club named their media production section at their Irving, Texas headquarters the "John Chang Broadcasting Wing." Chang was instrumental in the design and construction of the production section and upon his death, the Jones family dedicated the section in his memory. <br/><br/>
-							<i>"He inspired our organization, me personally in a way that we built a studio that is unsurpassed in sports. So the Cowboys, have broken new ground because of John Chang's quarterbacking that no team in the history of sports have ever been there and he not only built a great organization around him, but the very studio that were in and the very state of the art of it is John's signature."</i> <br/><br/>
-							Jerry Jones, Owner and General Manager of the Dallas Cowboys Football Club.
-						</p>
+						MIAMI-In June 2004, the Dallas Cowboys Football Club named their media production section at their Irving, Texas headquarters the "John Chang Broadcasting Wing." Chang was instrumental in the design and construction of the production section and upon his death, the Jones family dedicated the section in his memory. <br/><br/>
+						<i>"He inspired our organization, me personally in a way that we built a studio that is unsurpassed in sports. So the Cowboys, have broken new ground because of John Chang's quarterbacking that no team in the history of sports have ever been there and he not only built a great organization around him, but the very studio that were in and the very state of the art of it is John's signature."</i> <br/><br/>
+						Jerry Jones, Owner and General Manager of the Dallas Cowboys Football Club.
 					</Fragment>}
 					longText={true}
 				/>

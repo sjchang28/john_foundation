@@ -23,9 +23,9 @@ const Contact = () => {
 			</p>
 			
 			<h2>Email Us Questions or Comments</h2>
-			<p>
+			<div>
 				Please fill out the form below to send us an email. We will get back to you as soon as possible.
-			</p>
+			</div>
 				<div className="section-card-information general-section-card">
 					<InputGroup className="mb-3">
 					<InputGroup.Text id="basic-addon1">Subject</InputGroup.Text>

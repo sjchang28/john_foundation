@@ -45,14 +45,12 @@ const Article = ({
 									<h3>{header}</h3>
 								</div>
 							</Card.Title>
-							<Card.Text>
-								<div className="text-container" style={(readMoreText || scholarship) ? ({height:"auto"}) : ({height:"3.7em"})}>
-									{text}
-								</div>
-								{
-									(longText || !scholarship) ? (<Button onClick={onClickReadMore} variant="link" className="read-more-button">{readMore}</Button>) : (<div />)
-								}
-							</Card.Text>
+							<div className="text-container" style={(readMoreText || scholarship) ? ({height:"auto"}) : ({height:"3.7em"})}>
+								{text}
+							</div>
+							{
+								(longText || !scholarship) ? (<Button onClick={onClickReadMore} variant="link" className="read-more-button">{readMore}</Button>) : (<div />)
+							}
 						</Col>
 					</Row>
 				</Container>

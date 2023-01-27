@@ -27,17 +27,17 @@ const About = () => {
 			<div className="body-page-text">
 				<div>
 					<header className="about-page-text-headers"><h1>About Us</h1></header>
-					<p className="mb-2">
+					<Fragment className="mb-2">
 						The John D. Chang foundation was established to honor John's memory by supporting the two passions of his life: sports and broadcast journalism. <br /><br />
 						The foundation is guided by the values that were central to John's life and include a spirit of caring, a commitment to excellence, compassion and love. To further those values, the foundation will provide scholarships to students pursuing a career in broadcasting and support youth sports teams and community events. <br /><br />
 						The foundation seeks to enhance the quality of life within the community by promoting harmony, respect for diversity, responsibility and academic achievement. By supporting the vision of John D. Chang, each of us really can make a difference.
-					</p>
+					</Fragment>
 					<hr className="mt-5" />
 				</div>
 
 				<div className="mt-5">
 					<header className="about-page-text-headers"><h1>About John D. Chang</h1></header>
-					<p>
+					<Fragment>
 						John Chang, Director of Broadcasting, Dallas Cowboys <br />
 						<i>Jan. 4, 1964 - Dec. 12, 2002</i><br /><br />
 
@@ -46,7 +46,7 @@ const About = () => {
 						Chang was a valued member of the Dallas Cowboys broadcasting department. He was hired on March 4, 1991, assuming the position of Senior Editor / Videographer in the club's television department. Chang was promoted to the position of Director of Television for the Cowboys prior to the 1993 season. In 2001, he became the team's Director of Broadcasting. <br /><br />
 						Under his direction, Cowboys broadcasting grew into the NFL's largest and most comprehensive in-house television production department. Chang and his staff annually produced the club's preseason games, two weekly in-season television shows, 16 regular season post-game shows, and a series of annual one-hour television specials. All of this programming is syndicated to over 25 markets throughout the five-state SilverStar Network. Chang oversaw the production of all three of the Cowboys Super Bowl Specials in the weeks leading up to the club's World Championships in 1992, 1993 and 1995. His development of the "Making of the Dallas Cowboys Cheerleader Calendar" program became a popular property that is annually aired nationally on ESPN. In 2002, he served as the coordinating producer for all Dallas Desperados game broadcasts in the inaugural season of the Arena Football League Team. Recently a new in-house production facility was built at the Cowboys Valley Ranch. "John played an integral role in designing the facility from the studio to the chairs", said Jerry Jones. (FROM VIDEO) <br /><br />
 						Born in Thailand, but notably a local native of Miami, Chang graduated from North Miami Senior High School in 1981. While attending Florida State University from 1980 - 1984 John was influential in creating "1800 Seconds", a student directed broadcast, which aired locally around the Tallahassee area. Prior to joining the Cowboys, Chang spent seven years working in local television in Florida. After graduating from Florida State University with a Broadcast Journalism degree in the summer of 1984, he began his career at Channel 10 WPLG-TV an ABC affiliate in Miami. From 1986 - 1988 he moved to Jacksonville and worked at WJXT-TV, and then on to WTSP-TV in St. Petersburg, Florida from 1988 - 1991. In 1991 John worked with the crew of Good Morning America to cover the Space Shuttle Discovery Launch.
-					</p>
+					</Fragment>
 				</div>
 			</div>
 

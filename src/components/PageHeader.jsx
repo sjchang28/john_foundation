@@ -15,7 +15,7 @@ const PageHeader = () => {
 					<a href="/scholarships_grants">Scholarships & Grants</a>
 					<a href="/waystogive">Ways to Give</a>
 					<a href="/about">About</a>
-					<a href="/contactus">Contact</a>
+					<a href="/contactus">Contact Us</a>
 				</div>
 			</div>
 		</Fragment>

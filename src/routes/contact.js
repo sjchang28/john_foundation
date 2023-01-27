@@ -15,7 +15,7 @@ const Contact = () => {
 	return(
 		<Fragment>
 			<PageHeader />
-			<div className="page-information">
+			<div className="page-information body-page-text">
 			<h1>Contact Us</h1>
 			<hr className="mt-3"/>
 			<p className="mb-5">

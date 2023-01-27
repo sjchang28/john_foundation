@@ -258,7 +258,6 @@
 	float: left;
 	font-size: 0.5rem;
 	color: #b9b9b9;
-	/* margin-left: -19.7rem; */
 }
 
 .logo-text{
@@ -279,5 +278,5 @@
 }
 
 .registered-trademark-symbol{
-	font-size: 0.5rem;
+	font-size: 0.70rem;
 }

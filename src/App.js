@@ -11,7 +11,7 @@ function App() {
   return (
 	<Router>
 		<div>
-		<Switch>
+		<Switch basename={"/"}>
 			<Route path="/about" element={<About />} />
 			<Route path="/contactus" element={<Contact />} />
 			<Route path="/donate" element={<WaysToGive />} />

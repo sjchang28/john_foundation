@@ -1,10 +1,10 @@
-import { Fragment, useState, useRef } from "react";
+import { Fragment, useState } from "react";
 import Form from "react-bootstrap/Form";
 import InputGroup from "react-bootstrap/InputGroup";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 
-import Reaptcha from "reaptcha";
+import ReCAPTCHA from "react-google-recaptcha";
 
 import PageHeader from "../components/PageHeader.jsx";
 import PageFooter from "../components/PageFooter.jsx";
@@ -12,8 +12,7 @@ import PageFooter from "../components/PageFooter.jsx";
 import "../style/App.css"
 
 const Contact = () => {
-	const [captchaToken, setCaptchaToken] = useState(null);
-	const captchaRef = useRef(null);
+	const [isVerified, setIsVerified] = useState(false);
 
 	const [modalShow, setModalShow] = useState(false);
 	const [notifyUserTitle, setNotifyUserTitle] = useState("");
@@ -32,11 +31,10 @@ const Contact = () => {
 		setForm({ ...form, [e.target.name]: e.target.value });
 	};
 
-	const onVerify = () =>{
-		captchaRef.current.getResponse().then(res => {
-		    setCaptchaToken(res)
-		});
-	}
+	const onChangeReCAPTCHA = (value) => {
+		console.log("Captcha value:", value)
+		setIsVerified(true);
+	};
 
 	const sendInfo = (e) => {
 		console.log(form.subject, form.firstName, form.lastName, form.email, form.message);
@@ -49,18 +47,20 @@ const Contact = () => {
 			form.phone = "N/A";
 		}
 
-		// window.Email.send({
-		// 		SecureToken : "1184605e-5dba-45dc-a0ec-32a13b203978",
-		// 		To : "johndchang.foundation@gmail.com",
-		// 		From : form.email,
-		// 		Subject : form.subject,
-		// 		Body : "Name: " + form.firstName + " " + form.lastName +
-		// 			"<br />Email: " + form.email +
-		// 			"<br />Phone: " +  +
-		// 			"<br />Message: " + form.message
-		// }).then(
-		// 	updateModalMessage("Message Sent Successfully!", "We will get back to you as soon as possible.", "success")
-		// ).catch((error) => {
+		window.Email.send({
+				SecureToken : "1184605e-5dba-45dc-a0ec-32a13b203978",
+				To : "johndchang.foundation@gmail.com",
+				From : form.email,
+				Subject : form.subject,
+				Body : "Name: " + form.firstName + " " + form.lastName +
+					"<br />Email: " + form.email +
+					"<br />Phone: " +  +
+					"<br />Message: " + form.message
+		}).then(
+			//updateModalMessage("Message Sent Successfully!", "We will get back to you as soon as possible.", "success")
+			message => alert(message)
+		);
+		// .catch((error) => {
 		// 	updateModalMessage("Message Didn't Send", "Try Again Later or Reach Out to Us on Facebook.", "failed");
 		// });
 	};
@@ -196,14 +196,16 @@ const Contact = () => {
 					/>
 					</InputGroup>
 
-					<Reaptcha
-						sitekey={process.env.REACT_APP_RECAPTCHA_SITE_KEY}
-						ref={captchaRef}
-						onVerify={onVerify}
+					<ReCAPTCHA className="mt-3"
+						sitekey={process.env["RECAPTCHA_SITE_KEY"]}
+						onChange={onChangeReCAPTCHA}
 					/>
-					<Button type="submit" 
+
+					<Button className="p-2 mb-3 mt-3" 
+						type="submit" 
 						variant="primary"
 						onClick={sendInfo}
+						disabled={!isVerified}
 					>
 						Submit Info
 					</Button>

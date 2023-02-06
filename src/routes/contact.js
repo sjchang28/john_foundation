@@ -15,8 +15,8 @@ const Contact = () => {
 	const [isVerified, setIsVerified] = useState(false);
 
 	const [modalShow, setModalShow] = useState(false);
-	const [notifyUserTitle, setNotifyUserTitle] = useState("");
-	const [notifyUserMsg, setNotifyUserMsg] = useState("");
+	// const [notifyUserTitle, setNotifyUserTitle] = useState("");
+	// const [notifyUserMsg, setNotifyUserMsg] = useState("");
 
 	const [form, setForm] = useState({
 		subject: "",
@@ -65,22 +65,22 @@ const Contact = () => {
 		// });
 	};
 
-	const updateModalMessage = (title, msg, state) => {
-		if (state === "success") {
-			setForm({
-				subject: "",
-				firstName: "",
-				lastName: "",
-				email: "",
-				phone: "",
-				message: ""
-			});
-		}
+	// const updateModalMessage = (title, msg, state) => {
+	// 	if (state === "success") {
+	// 		setForm({
+	// 			subject: "",
+	// 			firstName: "",
+	// 			lastName: "",
+	// 			email: "",
+	// 			phone: "",
+	// 			message: ""
+	// 		});
+	// 	}
 
-		setNotifyUserTitle(title);
-		setNotifyUserMsg(msg);
-		setModalShow(true);
-	};
+	// 	setNotifyUserTitle(title);
+	// 	setNotifyUserMsg(msg);
+	// 	setModalShow(true);
+	// };
 
 	const DisplayMessage = (props) => {
 		return (
@@ -218,8 +218,8 @@ const Contact = () => {
 			<DisplayMessage
 				show={modalShow}
 				onHide={() => setModalShow(false)}
-				title={notifyUserTitle}
-				msg={notifyUserMsg}
+				// title={notifyUserTitle}
+				// msg={notifyUserMsg}
 			/>
 		</Fragment>
 	);

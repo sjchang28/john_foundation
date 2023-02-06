@@ -197,7 +197,9 @@ const Contact = () => {
 					</InputGroup>
 
 					<ReCAPTCHA className="mt-3"
-						sitekey={process.env["RECAPTCHA_SITE_KEY"]}
+						//sitekey={process.env.REACT_APP_RECAPTCHA_SITE_KEY}
+						//sitekey={process.env["RECAPTCHA_SITE_KEY"]}
+						sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
 						onChange={onChangeReCAPTCHA}
 					/>
 

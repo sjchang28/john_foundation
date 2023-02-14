@@ -24,7 +24,7 @@ const Home = () => {
 		<div className="container container-photo">
 			<img src={MainJohnPhoto} alt="John D. Chang"/>
 			<div className="statement-overlay">
-				<h1>Providing Scholarships to Students who Dare to Dream Big.</h1>
+				<h1>Providing Scholarships to Students Who Dare to Dream Big.</h1>
 			</div>
 		</div>
 		<div className="mission-statement-information">

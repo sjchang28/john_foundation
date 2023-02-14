@@ -12,7 +12,7 @@ const PageFooter = () => {
 				</a>
 				<div className="footer-right">
 					<a href="/">Home</a>
-					<a href="/howcanihelp">How Can I Help</a>
+					<a href="/waystogive">Ways to Give</a>
 					<a href="/contactus">Contact</a>
 					<a href="/privacy">Privacy</a>
 				</div> <br /><br />

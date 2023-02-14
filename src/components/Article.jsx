@@ -25,7 +25,7 @@ const Article = ({
 	};
 
 	return (
-		<Card bg="light" style={{margin:"0 auto", width: '90%'}} className="mt-3 mb-3">
+		<Card bg="light" style={{margin:"0 auto", width: '95%'}} className="mt-3 mb-3">
 			<Card.Body>
 				<Container fluid style={{disply:'flex', justifyContent:'left'}} className="no-gutter">
 					<Row>

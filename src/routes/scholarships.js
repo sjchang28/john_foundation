@@ -16,13 +16,13 @@ const Scholarships = () => {
 					<div>
 						<header className="about-page-text-headers"><h1>Scholarships & Grants</h1></header>
 						<hr className="mt-3"/>
-						<Fragment className="mb-5">
+						<div>
 							The John D. Chang Foundation seeks to enhance the quality of life within the community by promoting harmony, respect for diversity, responsibility and academic achievement. By supporting the vision of John D. Chang, each of us really can make a difference. <br />
-						</Fragment>
+						</div>
 					</div>
 				</div>
 
-				<Container>
+				<Container className="mt-4">
 				<Col>
 					<Article 
 						header="The John Chang Scholarship Endowment Fund - FSU"

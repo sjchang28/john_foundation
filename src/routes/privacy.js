@@ -7,7 +7,7 @@ import '../style/App.css'
 
 const Privacy = () => {
 	return(
-		<Fragment>
+		<Fragment className="content">
 			<PageHeader />
 			<div className="page-information">
 			<h1>Privacy Informatinon</h1>

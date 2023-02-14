@@ -1,5 +1,4 @@
 import { Fragment } from "react";
-import Button from 'react-bootstrap/Button';
 
 import PageHeader from '../components/PageHeader.jsx';
 import PageFooter from '../components/PageFooter.jsx';
@@ -10,7 +9,7 @@ import '../style/App.css';
 
 const WaysToGive = () => {
 	return(
-		<Fragment>
+		<Fragment className="content">
 			<PageHeader />
 			<div className="page-information">
 			<div className="container container-photo">
@@ -36,8 +35,8 @@ const WaysToGive = () => {
 							USA <br /><br />
 						</div>
 
-						<h4>Donate Online</h4>
-						<Button className="p-2">Donate Now</Button> <br /><br />
+						{/* <h4>Donate Online</h4>
+						<Button className="p-2">Donate Now</Button> <br /><br /> */}
 
 						<h4>Unrestricted & Designated Gifts</h4>
 						<p>

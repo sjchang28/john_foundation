@@ -106,7 +106,7 @@ const Contact = () => {
 	};
 	
 	return(
-		<Fragment>
+		<Fragment className="content">
 			<PageHeader />
 			<div className="page-information body-page-text">
 			<h1>Contact Us</h1>

@@ -9,7 +9,7 @@ import '../style/App.css'
 
 const Scholarships = () => {
 	return(
-		<Fragment>
+		<Fragment className="content">
 			<PageHeader />
 			<div className="page-information">
 				<div className="body-page-text">

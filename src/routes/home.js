@@ -18,7 +18,7 @@ import '../style/App.css';
 
 const Home = () => {  
   return (
-	<Fragment>
+	<Fragment className="content">
 	<PageHeader />
 	<div>
 		<div className="container container-photo">

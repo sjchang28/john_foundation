@@ -4,7 +4,7 @@ import "../style/App.css";
 
 const PageFooter = () => {
 	return (
-		<Fragment>
+		<Fragment className="content">
 			<div className="footer">
 				<a href="/">
 					<span className="logo-text">John D. Chang Foundation<span className="registered-trademark-symbol">®</span> </span><br />

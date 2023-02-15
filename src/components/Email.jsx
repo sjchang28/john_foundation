@@ -124,9 +124,9 @@ const Email = () => {
 				/>
 				</InputGroup>
 
-				<div className="g-recaptcha" 
+				{/* <div className="g-recaptcha" 
 					data-sitekey={process.env["RECAPTCHA_SITE_KEY"]}
-				/>
+				/> */}
 
 				<Button className="p-2 mb-3 mt-3" 
 					type="submit" 

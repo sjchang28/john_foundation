@@ -45,7 +45,7 @@ const Contact = () => {
 				Please fill out the form below to send us an email. We will get back to you as soon as possible.
 			</div>
 			<div className="section-card-information general-section-card">
-				<Form onSubmit={handleSubmit}>
+				<Form onSubmit={handleSubmit} action="https://formspree.io/f/{form_id}" method="POST">
 					<InputGroup className="mt-3 mb-3">
 					<InputGroup.Text id="basic-addon1">First Name</InputGroup.Text>
 					<Form.Control
@@ -134,8 +134,8 @@ const Contact = () => {
 					/>
 					</InputGroup>
 
-					<div class="g-recaptcha" 
-						data-sitekey="6LeyVUUkAAAAAIlc1cyMC0Ye0aJe7c0CkcHtfdLB"
+					<div clasName="g-recaptcha mt-3 mb-3" 
+						data-sitekey="6LcmK4EkAAAAAPT7ogAfGc80V_eQgVY_rvR2R-Ud"
 					/>
 
 					<Button className="p-2 mb-3 mt-3" 

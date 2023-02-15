@@ -1,7 +1,5 @@
 import { React, Fragment, useEffect } from "react";
 import { useForm, ValidationError } from '@formspree/react';
-import Form from "react-bootstrap/Form";
-import InputGroup from "react-bootstrap/InputGroup";
 import Button from "react-bootstrap/Button";
 
 import PageHeader from "../components/PageHeader.jsx";
@@ -45,94 +43,29 @@ const Contact = () => {
 				Please fill out the form below to send us an email. We will get back to you as soon as possible.
 			</div>
 			<div className="section-card-information general-section-card">
-				<Form onSubmit={handleSubmit} action="https://formspree.io/f/2142987692961430636" method="POST">
-					<InputGroup className="mt-3 mb-3">
-					<InputGroup.Text id="basic-addon1">First Name</InputGroup.Text>
-					<Form.Control
-						placeholder="First Name"
-						aria-label="First Name"
-						aria-describedby="basic-addon1"
-						id="firstname" type="text" name="firstname" 
-						className="form-control"
-						required
+				<form onSubmit={handleSubmit}>
+					<label htmlFor="email">
+						Email Address
+					</label>
+					<input
+						id="email"
+						type="email" 
+						name="email"
 					/>
 					<ValidationError 
-						prefix="firstname" field="firstname"
+						prefix="Email" 
+						field="email"
 						errors={state.errors}
-					/>
-					</InputGroup>
-					<InputGroup className="mb-3">
-					<InputGroup.Text id="basic-addon1">Last Name</InputGroup.Text>
-					<Form.Control
-						placeholder="Last Name"
-						aria-label="Last Name"
-						aria-describedby="basic-addon1"
-						id="lastname" type="text" name="lastname" 
-						className="form-control"
-						required
+					/><br />
+					<textarea
+						id="message"
+						name="message"
 					/>
 					<ValidationError 
-						prefix="lastname" field="lastname"
+						prefix="Message" 
+						field="message"
 						errors={state.errors}
 					/>
-					</InputGroup>
-					<InputGroup className="mb-3">
-					<InputGroup.Text id="basic-addon1">Subject</InputGroup.Text>
-					<Form.Control
-						placeholder="Subject"
-						aria-label="Subject"
-						aria-describedby="basic-addon1"
-						id="subject" type="text" name="subject"
-						className="form-control"
-						required
-					/>
-					<ValidationError 
-						prefix="subject" field="subject"
-						errors={state.errors}
-					/>
-					</InputGroup>
-					<InputGroup className="mb-3">
-					<InputGroup.Text id="basic-addon1">Email</InputGroup.Text>
-					<Form.Control
-						placeholder="Email"
-						aria-label="Email"
-						aria-describedby="basic-addon1"
-						id="email" type="email" name="email"
-						className="form-control"
-						required
-					/>
-					<ValidationError 
-						prefix="email" field="email"
-						errors={state.errors}
-					/>
-					</InputGroup>
-					<InputGroup className="mb-3">
-					<InputGroup.Text id="basic-addon1">Phone (Optional)</InputGroup.Text>
-					<Form.Control
-						placeholder="Phone (Optional)"
-						aria-label="Phone (Optional)"
-						aria-describedby="basic-addon1"
-						id="phone" type="text" name="phone"
-						className="form-control"
-					/>
-					<ValidationError 
-						prefix="phone" field="phone"
-						errors={state.errors}
-					/>
-					</InputGroup>
-
-					<h5>Questions or Comments</h5>
-					<InputGroup>
-					<Form.Control placeholder="How Can We Help?" as="textarea" aria-label="With textarea" 
-						id="message" name="message"
-						className="form-control"
-						required
-					/>
-					<ValidationError 
-						prefix="message" field="message"
-						errors={state.errors}
-					/>
-					</InputGroup>
 
 					<div clasName="g-recaptcha mt-3 mb-3" 
 						data-sitekey="6LcmK4EkAAAAAPT7ogAfGc80V_eQgVY_rvR2R-Ud"
@@ -145,7 +78,7 @@ const Contact = () => {
 					>
 						Submit Info
 					</Button>
-				</Form>
+				</form>
 			</div>
 			</div>
 			<PageFooter />

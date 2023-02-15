@@ -1,3 +1,5 @@
+import 'formdata-polyfill';
+
 import {BrowserRouter as Router, Route, Routes as Switch} from 'react-router-dom';
 
 import About from './routes/about.js';

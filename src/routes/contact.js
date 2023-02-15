@@ -45,7 +45,7 @@ const Contact = () => {
 				Please fill out the form below to send us an email. We will get back to you as soon as possible.
 			</div>
 			<div className="section-card-information general-section-card">
-				<Form onSubmit={handleSubmit} action="https://formspree.io/f/{form_id}" method="POST">
+				<Form onSubmit={handleSubmit} action="https://formspree.io/f/2142987692961430636" method="POST">
 					<InputGroup className="mt-3 mb-3">
 					<InputGroup.Text id="basic-addon1">First Name</InputGroup.Text>
 					<Form.Control

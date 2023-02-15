@@ -14,7 +14,6 @@ function App() {
 		<Switch basename={"/"}>
 			<Route path="/about" element={<About />} />
 			<Route path="/contactus" element={<Contact />} />
-			<Route path="/donate" element={<WaysToGive />} />
 			<Route path="/waystogive" element={<WaysToGive />} />
 			<Route path="/privacy" element={<Privacy />} />
 			<Route path="/scholarships_grants" element={<Scholarships />} />

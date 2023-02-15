@@ -15,9 +15,9 @@ import '../style/App.css'
 
 const About = () => {
 	return(
-		<Fragment className="content">
+		<Fragment>
 			<PageHeader />
-			<div className="page-information">
+			<div className="page-information content">
 			<div className="container container-photo">
 				<img src={MissionStatement} alt="John D. Chang"/>
 				<div className="statement-overlay">

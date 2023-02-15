@@ -9,9 +9,9 @@ import '../style/App.css';
 
 const WaysToGive = () => {
 	return(
-		<Fragment className="content">
+		<Fragment>
 			<PageHeader />
-			<div className="page-information">
+			<div className="page-information content">
 			<div className="container container-photo">
 				<img src={WaysToGivePhoto} alt="John D. Chang"/>
 				<div className="image-overlay">

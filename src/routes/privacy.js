@@ -7,9 +7,9 @@ import '../style/App.css'
 
 const Privacy = () => {
 	return(
-		<Fragment className="content">
+		<Fragment>
 			<PageHeader />
-			<div className="page-information">
+			<div className="page-information content">
 			<h1>Privacy Informatinon</h1>
 			<hr className="mt-3"/>
 

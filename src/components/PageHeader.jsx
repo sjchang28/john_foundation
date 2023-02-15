@@ -5,8 +5,8 @@ import "../style/App.css";
 
 const PageHeader = () => {
 	return (
-		<Fragment className="content">
-			<div className="header">
+		<Fragment>
+			<div className="header content">
 				<a href="/">
 					<img src={FoundationLogo} alt="John D. Chang Foundation Logo" className="foundation-logo"/>
 				</a>

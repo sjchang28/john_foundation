@@ -4,8 +4,8 @@ import "../style/App.css";
 
 const PageFooter = () => {
 	return (
-		<Fragment className="content">
-			<div className="footer">
+		<Fragment>
+			<div className="contnent footer">
 				<a href="/">
 					<span className="logo-text">John D. Chang Foundation<span className="registered-trademark-symbol">®</span> </span><br />
 					<div className="copyright-footer">Copyright © 2006 John D. Chang Foundation-All rights reserved.</div>

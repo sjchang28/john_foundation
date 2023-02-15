@@ -9,9 +9,9 @@ import '../style/App.css'
 
 const Scholarships = () => {
 	return(
-		<Fragment className="content">
+		<Fragment>
 			<PageHeader />
-			<div className="page-information">
+			<div className="page-information content">
 				<div className="body-page-text">
 					<div>
 						<header className="about-page-text-headers"><h1>Scholarships & Grants</h1></header>

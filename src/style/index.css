@@ -16,11 +16,3 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
-/* Use media queries to change styles based on screen size */
-@media only screen and (max-width: 600px) {
-	/* Change the font size of text on smaller screens */
-	body {
-	  font-size: 1.75rem;
-	}
-} 

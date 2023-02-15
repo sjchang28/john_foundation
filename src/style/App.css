@@ -28,6 +28,13 @@
 	░▒█░░░░█░░█░█░▒█░░█░░█▄▄█░█░░░░█░░░░▒█▄▄█░█▄▄█░█░▀▄░█▀▀
 	░▒█▄▄▀░░▀▀░░▀░░▀░░▀░░▀░░▀░▀▀▀░░▀░░░░▒█░░░░▀░░▀░▀▀▀▀░▀▀▀
 */
+#g-recaptcha-response {
+	display: block !important;
+	position: absolute;
+	margin: -50px 0 0 0 !important;
+	z-index: -999999;
+	opacity: 0;
+}
 
 /*
 	░▒█░▒█░█▀▀░█░░▄▀▀▄░░░▒█▀▀█░█▀▀▄░█▀▀▀░█▀▀
@@ -199,7 +206,7 @@
 	float: right;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 600px) {
 	.header a {
 		float: none;
 		display: block;
@@ -265,7 +272,7 @@
 	font-size: 25px;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 600px) {
 	.footer a {
 		float: none;
 		text-align: left;
@@ -281,11 +288,10 @@
 }
 
 /* Use media queries to change styles based on screen size */
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 600px) {
 	/* Make your website's content container narrower on smaller screens */
 	.content {
-	  width: 90%;
 	  margin: 0 auto;
-	  text-size-adjust: 100%;
+	  text-size-adjust: auto;
 	}
 } 

@@ -28,8 +28,8 @@ const Scholarships = () => {
 						header="The John Chang Scholarship Endowment Fund - FSU"
 						text={ <Fragment>
 							We are working with the FSU Foundation (<a href="https://www.foundation.fsu.edu">www.foundation.fsu.edu</a>) to raise $100,000 for the John Chang Scholarship Endowment Fund , which will enable the university to provide a permanent, annual scholarship in the amount of $6,000. Please call (305) 588-8209 for additional information. <br /><br />
-							<a href="/">Click Here to Make a Donation Online</a><br />
-							<a href="/">Download Application</a>
+							<a href="/waystogive">Click Here to Make a Donation</a><br />
+							<a href="/scholarships_grants">Download Application</a>
 						</Fragment>
 						}
 						scholarship={true}
@@ -38,8 +38,8 @@ const Scholarships = () => {
 						header="FSU-John D. Chang Scholarship in Media Production"
 						text={ <Fragment>
 							FSU-John D. Chang Scholarship in Media Production the John D. Chang Scholarship in the amount of $2,500 will be awarded to a Florida State university student annually and will support undergraduate students in the College of Communication with a major in media production. The recipient must have a minimum <b>Grade Point Average of 3.0</b> and demonstrate financial need. <br /><br />
-							<a href="https://www.foundation.fsu.edu">Visit the FSU Website</a><br />
-							<a href="/">Download Application</a>
+							<a href="https://foundation.fsu.edu/fs4u">Visit the FSU Website</a><br />
+							<a href="/scholarships_grants">Download Application</a>
 						</Fragment>
 						}
 						scholarship={true}
@@ -49,7 +49,7 @@ const Scholarships = () => {
 						text={ <Fragment>
 							<b>Requirements:</b> Applicants must be graduating this year and accepted by a 4 year college or university in 2006. Must be in financial need and have a minumum <b>Grade Point Average of 3.5</b>. Attendance in the college or university of the student's choice is required and scholarship funds will be sent directly to the school. <br /><br />
 							<b>Deadline:</b> March 20, 2006 <br />
-							<a href="/">Download Application</a>
+							<a href="/scholarships_grants">Download Application</a>
 						</Fragment>
 						}
 						scholarship={true}
@@ -64,7 +64,7 @@ const Scholarships = () => {
 								<li><b>One (1)</b> student-athlete will be awarded a $500 scholarship.</li>
 							</ol>
 							<b>Deadline:</b> March 20, 2006 <br />
-							<a href="/">Download Application</a>
+							<a href="/scholarships_grants">Download Application</a>
 						</Fragment>
 						}
 						scholarship={true}

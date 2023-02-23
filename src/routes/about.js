@@ -55,7 +55,7 @@ const About = () => {
 				<Col>
 					<Article 
 							image={Thumbnail1}
-							alt="John D. Chang Video Editing"
+							alt="John D. Chang with Friend in San Francisco"
 							header="John not only taught me how to shoot, edit, create graphics, and produce for television, he also taught me how to be a better person."
 							date="January 4, 2007"
 							text={<div>
@@ -65,7 +65,7 @@ const About = () => {
 					/>
 					<Article 
 							image={Thumbnail2}
-							alt="John D. Chang working with the Cowboys"
+							alt="John D. Chang Travelling with a Friend"
 							header="We now carry the mantle to spread his values of hardwork, caring and integrity."
 							date="June 25, 2003"
 							text={<div>
@@ -75,7 +75,7 @@ const About = () => {
 					/>
 					<Article 
 							image={Thumbnail3}
-							alt="John D. Chang with his friends"
+							alt="John D. Chang with Jerry Jones at the Dallas Cowboys' Stadium"
 							header="Cowboys Lose Pioneer, Close Friend"
 							date="December 22, 2002"
 							text={<div>
@@ -85,7 +85,7 @@ const About = () => {
 					/>
 					<Article 
 							image={Thumbnail4}
-							alt="John D. Chang among Friends at the Dallas Cowboys"
+							alt="John D. Chang at the Beach, Shooting the Dallas Cowboys' Cheerleaders"
 							header="The Friend You Never Knew"
 							date="December 12, 2002"
 							text={<div>

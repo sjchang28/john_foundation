@@ -22,7 +22,7 @@ const Home = () => {
 	<PageHeader />
 	<div className="content">
 		<div className="container container-photo">
-			<img src={MainJohnPhoto} alt="John D. Chang"/>
+			<img src={MainJohnPhoto} alt="John D. Chang on The Job at the Los Angeles Raider's Stadium"/>
 			<div className="statement-overlay">
 				<h1>Providing Scholarships to Students Who Dare to Dream Big.</h1>
 			</div>
@@ -39,7 +39,7 @@ const Home = () => {
 			<Col>
 				<Article 
 					image={Awards5500FloridaStudents}
-					alt="John D. Chang Foundation Awards $5,500 in Scholarships to Florida Students"
+					alt="John D. Chang Graduates from FSU"
 					header="John D. Chang Foundation Awards $5,500 in Scholarships to Florida Students"
 					date="June 1, 2006"
 					text={<Fragment>
@@ -65,7 +65,7 @@ const Home = () => {
 				/>
 				<Article 
 					image={MakesIndelibleMark}
-					alt="Broadcasting Director Made Indelible Mark on Cowboys"
+					alt="John D. Chang with His Dallas Cowboys Coworkers"
 					header="Broadcasting Director Made Indelible Mark on Cowboys"
 					date="February 10, 2005"
 					text={<Fragment>
@@ -101,7 +101,7 @@ const Home = () => {
 				/>
 				<Article 
 					image={Awards5000FloridaStudents}
-					alt="John D. Chang Foundation Awards $5,500 in Scholarships"
+					alt="Scholarship Winners from the John D. Chang Foundation"
 					header="John D. Chang Foundation Awards $5,500 in Scholarships"
 					date="October 6, 2004"
 					text={<Fragment>
@@ -125,8 +125,8 @@ const Home = () => {
 				/>
 				<Article 
 					image={BroadcastingWing}
-					alt="Dallas Cowboys Dedicate Production Wing in Memory of John Chang"
-					header="Dallas Cowboys Dedicate Production Wing in Memory of John Chang"
+					alt="Dallas Cowboys Dedicate Plaque for the John D. Chang Production Wing"
+					header="Dallas Cowboys Dedicate Production Wing in Memory of John D. Chang"
 					date="July 1, 2004"
 					text={<Fragment>
 						<i>
